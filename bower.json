@@ -27,6 +27,7 @@
     "tests"
   ],
   "dependencies": {
-    "sass-toolkit": "~2.9.0"
+    "sass-toolkit": "~2.9.0",
+    "polymer": "Polymer/polymer#^0.5"
   }
 }
