@@ -1,0 +1,32 @@
+{
+  "name": "scss",
+  "version": "0.0.0",
+  "authors": [
+    "Pete Stewart <pete@newint.org>"
+  ],
+  "description": "design prototype",
+  "main": "css/main.css",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "keywords": [
+    "development",
+    "wireframes",
+    "prototype"
+  ],
+  "license": "GPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sass-toolkit": "~2.9.0"
+  }
+}

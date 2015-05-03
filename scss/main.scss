@@ -1,0 +1,227 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+
+$tablet: em(740);
+$desktop: em(980);
+
+
+* {
+    font-family: "Libre Baskerville",Helvetica,Arial,sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+main {
+
+    @include outer-container;
+}
+
+.feature-box {
+    @include align-items(stretch);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    @include flex-wrap(wrap);
+    #featured {
+        @include flex(3);
+        @include align-items(stretch);
+        @include display(flex);
+        @include flex-direction(row);
+        @include justify-content(flex-start);
+        min-width: 75%;
+        .featured--images {
+            @include flex(2);
+            //overflow: hidden;
+            //max-height: 375px;
+            //position: relative;
+            min-width: 66%;
+            picture {
+                display: none;
+                line-height: 0;
+                &.viewing {
+                    display: block;
+                }
+            }
+        }
+        .featured--links {
+            min-width: 33%;
+            @include flex(1);
+            @include align-items(stretch);
+            @include display(flex);
+            @include flex-direction(column);
+            @include justify-content(flex-start);
+            h2, p {
+                margin: 0.5em 1em 0 0.5em;
+            }
+            h2 {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                font-size: em(20);
+            }
+            a {
+                //display: block;
+                @include flex(1);
+                min-height: 25%;
+                margin: 0;
+                background-color: #eee;
+
+                &.selected {
+                    background-color: #ccc;
+                }
+            }
+
+        }
+
+    }
+
+    .featured--latest_magazine {
+        // @include span-columns(3);
+        // @include omega();
+        @include flex(1);
+        background-color: #eee;
+        text-align: center;
+        padding-top: 1em;
+        width: 25%;
+        img {
+            margin: auto;
+        }
+
+        .subscribe, .read {
+            text-decoration: none;
+            color: #888;
+            text-transform: uppercase;
+            font-size: em(13);
+            margin-top: 1em;
+        }
+
+        .subscribe {
+            padding-right: 1em;
+            border-right: 1px solid #ddd;
+        }
+
+        .read {
+            padding-left: 1em;
+            border-left: 1px solid #fff;
+        }
+    }
+
+    .featured--article_box {
+        //@include span-columns(3);
+        @include flex(1);
+        width: 25%;
+        background-color: #ddd;
+        padding-bottom: 1em;
+        p {
+            margin: 0 1em;
+            text-align: left;
+            color: #333;
+        }
+
+    }
+}
+
+
+@include media($tablet) {
+    .feature-box {
+        #featured {
+            @include justify-content(center);
+            @include align-content(center);
+            min-width: 100%;
+            @include flex(3 auto);
+            .featured--images {
+                @include flex(2);
+                img {
+                    min-width: 100%;
+                }
+            }
+            .featured--links {
+
+                @include flex(1);
+                // a {
+                    //     display: block;
+                    //     height: 25%;
+                    //     margin: 0;
+                    //     background-color: #ccffff;
+
+                    //     &.selected {
+                        //         background-color: #33ccff;
+                    //     }
+                // }
+
+            }
+
+        }
+
+        .featured--latest_magazine {
+            @include flex(1);
+            min-width: 33.333%;
+        }
+
+        .featured--article_box {
+            @include flex(1);
+            min-width: 33.333%;
+            text-align: center;
+            img {
+                max-width: 90%;
+                margin: 1em auto;
+            }
+            // &:nth-child(5), &:nth-child(6) {
+                //     min-width: 50%;
+            // }
+
+        }
+    }
+}
+
+@include media($desktop) {
+    .feature-box {
+        #featured {
+            min-width: 75%;
+            @include flex(3);
+            .featured--images {
+                @include flex(2);
+                img {
+                    min-width: none;
+                }
+
+            }
+            .featured--links {
+
+                @include flex(1);
+                // a {
+                    //     display: block;
+                    //     height: 25%;
+                    //     margin: 0;
+                    //     background-color: #ccffff;
+
+                    //     &.selected {
+                        //         background-color: #33ccff;
+                    //     }
+                // }
+
+            }
+
+        }
+
+        .featured--latest_magazine {
+            @include flex(1);
+            min-width: 25%;
+            img {
+                margin-bottom: 1em;
+            }
+        }
+
+        .featured--article_box {
+            //@include flex(1);
+            min-width: 20%;
+            &:nth-child(5), &:nth-child(6) {
+                min-width: 20%;
+            }
+        }
+    }
+}
