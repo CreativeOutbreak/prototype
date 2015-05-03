@@ -13,7 +13,13 @@
 <script>
 document.createElement( "picture" );
 </script>
-<script src="bower_components/webcomponentsjs/HTMLImports.min.js"></script>
+<script>
+window.addEventListener('WebComponentsReady', function(e) {
+          // imports are loaded and elements have been registered
+          console.log('Components are ready');
+          });
+</script>
+<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 <script>
 function supportsImports() {
       return 'import' in document.createElement('link');
@@ -22,22 +28,30 @@ function supportsImports() {
 if (supportsImports()) {
       // Good to go!
 } else {
-      // Use other libraries/require systems to load files.
+    console.log("Your browser doesn't support HTML5 imports, so you're not going to see the header and footer and any other content that is imported.  You might want to try Chrome or another recent browser");
 }
-console.log("Import supported: " + supportsImports());
+</script>
+
+<script>
+    function addHTML(class_name, element, _ba) {
+        var ba = _ba || "before";
+        window.addEventListener('WebComponentsReady', function(e) {
+            var link = document.querySelector('link[rel="import"]');
+            var content = link.import;
+            var el = content.querySelector(class_name);
+            console.log(ba);
+            if (ba == "before") {
+                document.body.insertBefore(el.cloneNode(true), element );
+            } else {
+                document.body.insertBefore(el.cloneNode(true), element.nextSibling );
+            }
+
+        });
+    }
 </script>
 <script src="js/picturefill.js" async></script>
 </head>
 <body> 
-    <script>
-        var link = document.querySelector('link[rel="import"]');
-        var content = link.import;
-
-        // Grab DOM from warning.html's document.
-        var el = content.querySelector('.header');
-
-        document.body.appendChild(el.cloneNode(true));
-    </script>
 <main>
 <div class="feature-box">
     <section id="featured">
@@ -118,5 +132,7 @@ console.log("Import supported: " + supportsImports());
 </div>
 </main>
 <!-- <script src="js/featured.js"></script> -->
+<script> addHTML('.header', document.querySelector('main') ); </script>    
+<script> addHTML('.footer', document.querySelector('main'), "after" ); </script>    
 </body>
 </html>
