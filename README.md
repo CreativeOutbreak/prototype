@@ -1,3 +1,3 @@
-Responsive Pattern Wireframes
-=============================
+Design Prototypes
+=================
 
