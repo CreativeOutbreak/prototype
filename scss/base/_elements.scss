@@ -11,6 +11,19 @@ img {
     max-width: 100%;
 }
 
+p, h1, h2, h3, h4 {
+    padding: 0.5em 0;
+    color: $base_text-color;
+}
+
+a {
+    color: $prime_color;
+    text-decoration: none;
+    &:hover {
+        border-bottom: 1px dashed $prime_color;
+    }
+}
+
 h2 {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -19,10 +32,34 @@ h2 {
 }
 
 p {
-    color: #333;
     font-size: em($p_size);
+    line-height: 1.5;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 7px solid #ccc;
+    padding-left: 1em;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+    p {
+        font-size: em(20);
+        color: #666;
+        padding-right: 1em;
+    }
+}
+
+figure {
+    figcaption {
+        padding: 1em 0.5em 0;
+        font-style: italic;
+        color: #aaa;
+    }
 }
 
 header .container, main, footer .container {
     @include outer-container;
+}
+
+main {
+    padding-bottom: 2em;
 }

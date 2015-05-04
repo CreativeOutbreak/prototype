@@ -2,8 +2,7 @@
  * Variables
  */
 
-
-////  Breakpoints
+////  Breakpoints ////
 
 $ex-small: em(480);
 $small: em(625);
@@ -11,13 +10,28 @@ $tablet: em(740);
 $desktop: em(980);
 
 
-//// Element sizes
+//// Element sizes ////
 $footer_height: em(200);
 
-//// Fonts & Sizes
+//// Fonts, Sizes & Line height ////
 $font-family_main: "Libre Baskerville",Helvetica,Arial,sans-serif;
 $p_size: 18;
+$p_line-height: 1.5;
+$h3_size: 20;
 $h2_size: 22;
 $h1_size: 24;
+
+
+//// Size & Position ////
+
+
+//// Colours ////
+$prime_color: #a03c3c;
+$footer_bg: #333;
+$footer_text-color: #eee;
+$main_text-color: #333;
+
+/* Base colours */
+$base_text-color: #333;
 
 

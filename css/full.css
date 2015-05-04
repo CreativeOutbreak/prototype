@@ -334,6 +334,7 @@ video {
 /**
  * Variables
  */
+/* Base colours */
 body {
   padding: 0;
   margin: 0;
@@ -347,6 +348,19 @@ img {
   max-width: 100%;
 }
 
+p, h1, h2, h3, h4 {
+  padding: 0.5em 0;
+  color: #333;
+}
+
+a {
+  color: #a03c3c;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px dashed #a03c3c;
+}
+
 h2 {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -355,8 +369,26 @@ h2 {
 }
 
 p {
-  color: #333;
   font-size: 1.125em;
+  line-height: 1.5;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 7px solid #ccc;
+  padding-left: 1em;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+blockquote p {
+  font-size: 1.25em;
+  color: #666;
+  padding-right: 1em;
+}
+
+figure figcaption {
+  padding: 1em 0.5em 0;
+  font-style: italic;
+  color: #aaa;
 }
 
 header .container, main, footer .container {
@@ -368,6 +400,71 @@ header .container::after, main::after, footer .container::after {
   clear: both;
   content: "";
   display: table;
+}
+
+main {
+  padding-bottom: 2em;
+}
+
+.row {
+  display: block;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.main.columns {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+.main.columns:last-child {
+  margin-right: 0;
+}
+
+.sidebar-second.columns {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+}
+.sidebar-second.columns:last-child {
+  margin-right: 0;
+}
+
+.splash-image {
+  text-align: center;
+}
+.splash-image img {
+  margin: auto;
+}
+
+.section--box {
+  padding: 1em;
+  background-color: #eee;
+  margin: 0.5em 0;
+}
+.section--box img, .section--box figure {
+  float: left;
+  margin: 1em 1.5em 1em 0;
+}
+.section--box img {
+  border: solid 0.25em #fff;
+}
+.section--box figure img {
+  float: none;
+  margin: 0;
+}
+
+.heading--cross_head {
+  font-size: 1.5em;
+}
+
+.section--footnotes {
+  margin-left: 1em;
 }
 
 .feature-box {
@@ -838,6 +935,9 @@ footer, .push {
 
 footer {
   background-color: #333;
+}
+footer h2, footer p, footer a {
+  color: #eee;
 }
 
 /*# sourceMappingURL=full.css.map */

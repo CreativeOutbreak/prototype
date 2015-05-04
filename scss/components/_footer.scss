@@ -10,6 +10,10 @@ footer, .push {
     height: $footer_height; /* '.push' must be the same height as 'footer' */
 }
 
+
 footer {
-    background-color: #333;
+    background-color: $footer_bg;
+    h2, p, a {
+        color: $footer_text-color;
+    }
 }
