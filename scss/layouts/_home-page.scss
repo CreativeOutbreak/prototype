@@ -1,39 +1,3 @@
-@import "bourbon/bourbon";
-@import "neat/neat";
-
-$ex-small: em(480);
-$small: em(625);
-$tablet: em(740);
-$desktop: em(980);
-
-
-$p_size: 18;
-$h2_size: 22;
-$h1_size: 24;
-
-* {
-    font-family: "Libre Baskerville",Helvetica,Arial,sans-serif;
-}
-
-img {
-    max-width: 100%;
-}
-
-h2 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: em($h2_size);
-}
-
-p {
-    color: #333;
-    font-size: em($p_size);
-}
-
-main {
-    @include outer-container;
-}
 
 .feature-box {
     @include align-items(stretch);

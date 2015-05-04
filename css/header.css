@@ -1,5 +1,16 @@
-.header h1 {
-  color: tomato;
+.header {
+  width: 100%;
+}
+.header .logo-block {
+  width: 100%;
+  height: 110px;
+}
+.header .menu-bar {
+  width: 100%;
+  background-color: #a03c3c;
+  height: 45px;
+  position: sticky;
+  top: 110px;
 }
 
 /*# sourceMappingURL=header.css.map */

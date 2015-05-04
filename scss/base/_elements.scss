@@ -1,0 +1,28 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: $font-family_main;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: em($h2_size);
+}
+
+p {
+    color: #333;
+    font-size: em($p_size);
+}
+
+header .container, main, footer .container {
+    @include outer-container;
+}
