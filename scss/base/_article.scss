@@ -1,0 +1,61 @@
+
+.row {
+    @include row();
+}
+
+.main {
+    &.columns {
+        @include span-columns(8);
+    }
+
+}
+
+.sidebar-second {
+
+    &.columns {
+        @include span-columns(4);
+    }
+
+}
+
+.splash-image {
+    text-align: center;
+    img {
+        margin: auto;
+    }
+}
+
+.section--box {
+    padding: 1em;
+    background-color: #eee;
+    margin: 0.5em 0;
+
+    img, figure {
+        float: left;
+        margin: 1em 1.5em 1em 0;
+    }
+
+    img {
+        border: solid 0.25em #fff; 
+    }
+
+    figure {
+        img {
+            float: none;
+            margin: 0;
+        }
+    }
+
+}
+
+.heading--cross_head {
+    font-size: em(24);
+}
+
+.quote--quote {
+
+}
+
+.section--footnotes {
+    margin-left: 1em;
+}

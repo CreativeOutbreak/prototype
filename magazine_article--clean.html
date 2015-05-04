@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<title>Magazine Article</title>
+<meta name="viewport" content="width=device-width, maximum-scale = 1.0" />
+<meta name="description" content="Magazine Article -- Prototype" />
+<link href='css/full.css' rel='stylesheet' type='text/css'>
+
+<!-- HTML imports START -->
+<link rel="import" href="includes/snippets.html">
+<!-- HTML imports END -->
+
+<!--[if lt IE 9]>
+    <script src="src/_lib/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+
+<script src="src/_lib/webcomponentsjs/webcomponents.js"></script>
+<script>
+function supportsImports() {
+    return 'import' in document.createElement('link');
+}
+
+if (supportsImports()) {
+    // Good to go!
+} else {
+    console.log("Your browser doesn't support HTML5 imports, so you're not going to see the header and footer and any other content that is imported.  You might want to try Chrome or another recent browser");
+}
+
+function addHTML(class_name, element, _ba) {
+    var ba = _ba || "before";
+    var link = document.querySelector('link[rel="import"]');
+    var content = link.import;
+    var el = content.querySelector(class_name);
+    if (ba == "before") {
+        document.body.insertBefore(el.cloneNode(true), element );
+    } else {
+        document.body.insertBefore(el.cloneNode(true), element.nextSibling );
+    }
+}
+</script>
+<script src="js/picturefill.js" async></script>
+</head>
+<body> 
+<main>
+<h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a><a href="#" class="current">Is there a feminist spring?</a></div>
+<div class="row"> <!-- this is here for the footer to work, but could be done better is Drupal code was neater -->
+    <div class="large-9 main columns">
+        <h1 id="page-title" class="title">Is there a feminist spring?</h1>
+        <a href="/issues/2014/07/01">Feminism</a>
+        <p>Women’s rights has got its mojo back – and not a minute too soon. <strong>Hazel Healy</strong> takes stock of the challenges ahead.</p>
+        </p>
+        <figure class="splash-image">
+            <img class="embedded-media__image" src="http://dev.newint.org/sites/default/files/features/2014/06/30/keynoteimage.jpg" alt="credit: Nick Ut/AP/Press Association Images" />
+            <figcaption class="embedded-media__caption">Girls strike a pose for an advert for GoldieBox. One of the companies bucking the gendered toy divide, it makes engineering toys for girls.  <span class="embedded-media__caption__credit">Nick Ut/AP/Press Association Images</span></figcaption>
+        </figure>
+        </p>
+        <p>They cut a dash in the crowded hall: a gang of secondary-school girls in head scarves and bright red capes, which were emblazoned with faces of their heroes – Simone de Beauvoir, Margaret Atwood, Maya Angelou. </p>
+        <p>The girls, visitors from Mulberry school in Tower Hamlets, were taking part in Women of the World (WOW) festival earlier this year. They listened to 16-year-old education activist Malala Yousafzai and presented their own views on why feminism is more relevant than ever. ‘We are standing on the shoulders of those great women who came before us and championed the rights we enjoy today,’ Maria Amrin, one of those given a platform, said solemnly. ‘It’s up to us to keep the torch blazing.’</p>
+        <p>These girls are part of what is being described as a new wave of feminism. Feminism never stopped, of course, but there is something in the air – a new surge of energy and interest. In Britain alone, the number of grassroots groups has tripled since 2010, according to advocacy network UK Feminista. It is now inundated with requests for talks and training. </p>
+        <p>After years in the long grass, feminist concerns – control over our bodies, opportunities and value, share of labour and freedom from violence – are gaining traction among young women, politicians and the media.</p>
+        <p>Women around the world are mobilizing, using a hotch-potch of different methods to make an impact. US feminist Jessica Valenti describes the current surge as ‘self-directed and loosely organized; fast-moving micro-movements without institutional leadership’.</p>
+        <blockquote class="quote--all quote--quote"><p>New media has turbo-charged the old adage ‘the personal is political’</p></blockquote>
+        <p>Daring, in-your-face activism is booming. Russian anarchists such as Pussy Riot have become household names, and the ‘sextremists’ Femen have rediscovered the power of baring their breasts as a confrontational means of attracting attention. With media coverage guaranteed, their method has been adopted from Mexico to Tunisia to Germany. </p>
+        <p>Women are fighting similar battles as before but the tools and terrain have shifted. For one thing, new media has turbo-charged the old adage ‘the personal is political’, enabling consciousness-raising on a mass-scale.</p>
+        <p>‘It’s an exciting time,’ explains anti-female genital mutilation (FGM) campaigner Nimko Ali. ‘The internet gives you that instant ability to acknowledge things. </p>
+        <p>‘You’re thinking that it’s only you that’s been groped on a train but then you find out there are thousands, millions of us who had the same kind of experience. It’s not a feminism that’s shut away in books in libraries – this new wave of feminism is in real time.’</p>
+        <p>Today’s activism often has a creative, inclusive, playful twist (see 'Sticking it to the Man' boxes below). But don’t be fooled. The issues feminists are tackling now are deadly serious, the challenges intense. As Delhi was branded ‘the capital of rape’, it also became the capital of protests against rape.</p>
+        <h3 class="heading--all heading--cross_head">Unfinished business</h3>
+        <p>Women’s rights activism was never going to be a 100-metre sprint to the finish line. It is perhaps better characterized as uneven progress that moves in fits and starts – more like a relay race. </p>
+        <p>And the new feminist energy comes at a time when key victories of the past are on shaky ground. Take our ability to control our own bodies through contraception and access to abortion – core demands of 1960s and 1970s second-wave feminism.</p>
+        <p>Today, 65 per cent of women worldwide have access to some form of contraception and deaths during pregnancy and childbirth have dropped 45 per cent since 1990. Gains are, however, fragmented and unequally distributed. Maternal death remains the starkest indicator of inequality across the world – both the North-South divide and that of class within countries. In the US, black women are three times more likely to die in childbirth than white women.<sup>1</sup></p>
+        <p>Gains in the area of reproductive rights have proved fragile and reversible. ‘I can’t believe we’re talking about this in 2014!’ says Joni Seager, a feminist geographer of 20 years standing, who has watched the access to abortion closing down in her native US. The <em>New York Times</em> reported that 22 states adopted 70 different restrictions in 2013. ‘It’s a very serious, intense struggle, being fought inch by inch.’</p>
+        <p>Reactionary religious conservatives are trying to turn back the clock, all over the world. The influence of the Catholic Church sees Spain set to introduce tough new abortion laws. And in El Salvador, 17 women are serving up to 40 years for ‘homicide’ after pitching up at hospitals haemorrhaging from ‘suspicious’ miscarriages.</p>
+        <p>In Iraq, Muslim Shi’a principles inform a draft law – currently being considered by parliament – that would lower the age of consent to nine, legalize marital rape and grant custody over children to fathers in case of divorce.</p>
+        <blockquote class="section--all section--box">
+            <h3 class="heading--all heading--box_title">QAHERA – THE HIJABI SUPERHEROINE</h3>
+            <p>Deena Mohamed, a 19-year-old Egyptian graphic designer, created the veiled webcomic superheroine Qahera (‘conqueror’ in Arabic) in 2013. She combats misogyny and Islamophobia in equal measure. </p>
+            <img class="embedded-media__image" src="http://dev.newint.org/sites/default/files/features/2014/07/01/trash.jpg" />
+            <p>One comic strip targets the topless Ukrainian ‘sextremists’ of Femen. ‘They stereotype, dehumanize and exclude Muslim women from their version of feminism and liberation,’ explains Mohamed on her <a href="http://qahera.tumblr.com">Tumblr blog</a> . ‘It has little to do with their nudity – I don’t care about that and neither does Qahera.’</p>
+            <p>Qahera also metes out retribution to Egyptian men who sexually harass women, foiling attacks and suspending perpetrators from lamp-posts. </p>
+            <p>Street harassment is growing in post-revolution Egypt, and is an enduring focus for women. <a href="http://harassmap.org/ar">Harassmap</a> uses online tools to record incidents; Graffiti Jarami reclaim women’s right to occupy public space by spray-painting powerful women on to walls, while female and male members of <a href="https://www.facebook.com/Imprint.Movement.eg">Imprint</a>, founded in 2012, patrol Cairo’s metro and city streets in high-visibility jackets to deter attacks and raise awareness.   </p>
+        </blockquote>
+        <p>‘Freedom from violence’ was another rallying cry of second-wave feminism. It’s hard to tell whether there is more violence against women today – or more reporting of such cases. Either way the rates are steady or increasing.</p>
+        <p>The US writer Rebecca Solnit believes we are in the middle of a pandemic. Often it can feel that way. Take, as a sample, news coverage in the last week in May. Elliot Rodger went on a killing spree in California, justified by girls denying him the sex to which he felt he was entitled; a 25-year-old pregnant Pakistani woman was stoned to death outside courts in Lahore by her own family for refusing to agree to an arranged marriage; and two Indian cousins aged 14 and 16 were gang-raped and hanged as their parents pleaded in vain for police to act. </p>
+        <p>The stories are heart-breaking and hope-sapping. Yet one Pakistani woman, Ghansia Rashid, blogging on Bolo Bhi, interprets her country’s ‘honour’ killings as evidence that patriarchy is ‘breaking’ – failing to stem the tide of growing numbers of rebellious women who defy convention to marry for love and live on their own terms.</p>
+        <p>Buthina Khoury, a filmmaker who has condemned ‘honour’ killings in the Palestinian Authority, also sees a positive aspect to the rise in reported cases of such attacks. ‘It means people are acknowledging that it’s happening. That is part of dealing with it – before it was hidden and taboo.’ </p>
+        <p>Disputed or otherwise, domestic abuse continues to plague all societies. The percentage of women affected ranges from 23 per cent in high-income countries and hovers around 36 per cent in Asia, Africa and the Middle East. Campaigners in Australia, where a woman dies every week at the hands of her partner, are talking about a ‘national emergency’ after six women and children died in one week last Easter.</p>
+        <h3 class="heading--all heading--cross_head">One step forward...</h3>
+        <p>On the face of it, employment rights for women are an area of considerable progress. We’ve broken into new occupations, and made up half the workforce during the last 20 years. But writer and activist Beatrix Campbell has described how the advent of ‘neopatriarchal neoliberalism’ (‘an ugly name for an ugly deal’) has left women across the globe concentrated in low-paid, precarious work and a persistent gender pay gap.</p>
+        <p>An impressive 135 countries now enshrine maternity leave in law. But most women who juggle work and childcare will testify to the statistics that place domestic labour firmly in women’s court. Men are taking on more, yet if current trends continue, women in the West alone will have to wait until 2050 for a 50:50 split.<sup>2</sup></p>
+        <p>Other gains are on more solid ground. The field of education has seen the biggest steps forward. Globally, as many girls as boys now attend primary school, and equal secondary enrolment is not far off. </p>
+        <p>When it comes to political power, the advances are near universal. Only Saudi Arabia and the Vatican still withhold the vote from women, while Africa currently has two female heads of state. </p>
+        <p>Legal progress is indisputable. Sexual harassment was so widely accepted that there was not even a name for it until the 1970s. It gained legal status in the US in 1986, and now, in 2014, close to two-thirds of countries have laws against it; sexual violence is recognized as a weapon of war and prosecutions have been brought.</p>
+        <p>Lesbian and transgender people have fought successfully for more rights and visibility. Women in most parts of the world now enjoy greater automony and life choices than before – rights to property, to our children, to careers – that we now take for granted. </p>
+        <h3 class="heading--all heading--cross_head">Patriarchy rebooted </h3>
+        <p>Yet fighting patriarchy can feel like a game of whack-a-mole. As male privilege is eroded in one sphere, it crops up in a new guise. In the West in particular, cultural sexism seems to be making a comeback. ‘For a while we thought everything was OK,’ says Chris Blache from French feminist outfit La Barbe, ‘but it turned out it wasn’t the case. We have gone back on many values.’ </p>
+        <p>For one thing, the gender binary is back. The craze for unisex parenting in the 1970s has long gone. Multicoloured stripes have given way to rigid pink and blue, and we are seeing the triumph of a gendered, highly sexist toy market. </p>
+        <p>The trend took off in the 1980s. For girls, it’s femininity on steroids – they are sold glittering princess gear and cooking pots while boys get action toys and construction sets. Children get a clear message about what is appropriate for boys and girls to do, which forms expectations later in life. As young as three years old, children police the boundary and stigmatize those who cross the line. </p>
+        <p>This is not just a Western malaise. Nursery workers as far afield as El Salvador are consciously working to counteract the gender stereotyping that comes with imported toys.<sup>3</sup></p>
+        <blockquote class="quote--all quote--quote">
+            <p>‘Do we want to be the Barbarians at the gate or the people in the boardroom? I say both’
+            </p>
+        </blockquote>
+        <p>On hand to back up these divisions is what neuroscientist Gina Ribbon calls ‘neo-phrenology’, a rash of literature on ‘female brains’ or men’s innate ‘capacity to read maps’.</p>
+        <p>‘Despite irrefutable evidence that brains are elastic and change according to what’s going on around us,’ she reports, ‘scientists and journalists insist on elevating those studies that ignore the “drip, drip, drip” of gender stereotypes.’ The biological determinists send a clear message: there are essential differences between men and women, which cannot be overridden; inequality is inevitable.</p>
+        <p>At the same time, there is greater pressure than ever to conform to beauty ideals. A bugbear of feminists since Mary Wollstonecraft’s 1792 <em>A Vindication of the Rights of Women</em>, these images have become ever more powerful – narrower and increasingly defined by the sex industry.<sup>4</sup></p>
+        <p>No girl is too young to be sexy. US clothing retailer Abercrombie and Fitch has come in for criticism for marketing ‘push-up’ bikini tops to girls as young as seven. By way of concession, they rebranded them ‘padded’. (This is a firm that sells thongs printed with words like ‘eye candy’ and ‘wink wink’ in their kids’ range).</p>
+        <p>Paradoxically, ‘looking good’ is marketed to girls as the path to self-expression and independence – ideals that feminists taught us, but without consumerism and self-objectification in mind. The obsession with looks as a marker of success takes its toll on self-esteem, with around 40 per cent of British girls aged 10 and 11 wanting to lose weight.<sup>5</sup></p>
+        <p>In a globalized world, body image quickly becomes every body’s problem. The same anxiety is reflected throughout Canada, Australia and the US, while a study of girls exposed to Western ads in Fiji showed they were quick to adopt the punishing culture of physical vigilance, becoming 60 per cent more likely to develop eating disorders.<sup>6</sup>  The attractive, pale, high-achieving woman is also a powerful brand across Africa, China and India. </p>
+        <blockquote class="section--all section--box"><h3 class="heading--all heading--box_title">LA BARBE</h3>
+            <img class="embedded-media__image" src="http://dev.newint.org/sites/default/files/features/2014/07/01/larbarbe1.jpg"  />
+            <p>Don a false beard and walk into a space of power. This is the irony-laden technique of French direct action group <a href="http://www.labarbelabarbe.org/La_Barbe/Accueil.html"><em>La Barbe</em></a>, or Beard, who gatecrash male-dominated events of the French establishment.</p>
+            <p>‘We hold up a mirror,’ explains Chris Blache, an early member. ‘We walk in and congratulate the men and say – “this is beautiful, fantastic, nothing has changed since the 19th century! Keep it that way.”’</p>
+            <p>La Barbe began as a protest against the sexist bile levelled at Ségolène Royal when she ran for president in the 2007 elections, but soon branched out into all areas where women are under-represented.</p>
+            <p>‘We found that those who were the most respectable – leftwing, civil society groups, the arts – were also run by men. They would say, “Oh my god, how can you do this to us? We do good every day” or “But you cannot count art!”’</p>
+            <p>This eye-catching and effective method spread from Paris to the rest of France and now has chapters as far afield as Mexico (where it is renamed <em>Las Bigotonas</em> – ‘the moustaches’ – and Australia. </p>
+            <p>Blache advises all women to carry a false beard at all times, as ‘many situations call for it’.</p>
+        </blockquote>
+        <h3 class="heading--all heading--cross_head">Old problems, new twist</h3>
+        <p>Meanwhile, new technology has propelled pornography – long a source of division in the feminist movement – into new spheres, one of which is the playground. I remember the frisson at primary school when kids passed round thumbnail images of women in bras, ripped out of catalogues. Now the material is likely to be a little more explicit.</p>
+        <p>‘Boys as young as 11 are watching porn and learning that sex is something you “do to” a girl,’ explains Sophie Bennett, who runs UK Feminista’s schools programme. </p>
+        <p>Technology is bringing new ways of mediating sexual pressure. A study into sexting (sending explicit pictures by mobile phone) by the National Society for the Protection of Children recorded how boys – under pressure to brag and compete – coerce girls to send pictures of their breasts and other body parts. Once these images exist, sexting quickly turns into ‘shaming’ and sexual harassment.</p>
+        <p>Technology has also carried porn deep into rural India. <em>New Internationalist</em> writer Mari Marcel Thekaekara says 10-year-old boys are downloading violent images on to their mobiles for as little as two rupees (4 US cents). She worries that this has led to sadistic rapes of young girls, in a country where any discussion of sex is still deeply taboo. </p>
+        <p>While these new forms of misogyny have sprouted and taken root, a generation that rejected feminism has lost the means to talk about it. Sociologist Philip N Cohen tracked the use of words ‘sexism’ and ‘sexist’, in books over time. He relates how, after rising to prominence in the 1970s, they peaked in the 1990s, ‘and then, once again became less common than, say, the word “bacon”.’<sup>7</sup></p>
+        <p>The need for a new analysis could be what is driving this renaissance. A generation of women are finding that reality doesn’t live up to the equality enshrined in law.</p>
+        <h3 class="heading--all heading--cross_head">A jolt</h3>
+        <p>If earlier expressions of feminism dug deep into the root causes of oppression, this chapter majors on deeds; it is pragmatic, brand savvy – and taking aim at the many-headed hydra of patriarchy wherever it rears its ugly head.</p>
+        <p>‘In the past couple of months,’ recalls Canadian blogger Jarrah Hodge, ‘I’ve been to rallies against the closure of an abortion clinic in New Brunswick, campaigned for justice for missing and murdered indigenous women, and critiqued media reporting on sexual assault and the representation of women in <em>Star Trek</em>.’</p>
+        <p>The internet is choked full of feminist blogs and bloggers of all stripes, political persuasions class and race. Hodge’s diary of events is also symptomatic of another powerful thread of early 21st-century grassroots feminism: the need to act for all women, not just privileged white ones. ‘A real achievement of the feminist movement now is that we have connected up across class and cultures; including LGBTI people and straight men,’ reports 26-year-old Ecuadorean activist Adriana Garrido.</p>
+        <blockquote class="quote--all quote--quote"><p>Abercrombie and Fitch has marketed up 'push-up' bikini tops to girls as young as seven</p></blockquote>
+        <p>The new activism is also united in a powerful rejection of violence. The most dramatic protests have taken place in India, where the brutal rape and murder of a student in Delhi sparked outrage on an unprecedented scale. The activist Kavita Khrishnan has spoken of a new wave of ‘deep introspection about how we end up sustaining violence and discrimination against women’. </p>
+        <p>‘It may be the first time in decades,’ commented the author Nilanjana Roy, ‘that we are exploring those fault lines – of caste, class and gender – in such a mainstream fashion.’<sup>8</sup></p>
+        <p>Feminist groups in the Global South will often be fighting different battles compared with those in the North. Many pursue ‘strategic litigation’ – ways to enforce laws and set precedents around rights and protections – showing great courage and perseverance in troubled, violent places such as Colombia or Afghanistan. They are increasingly globally connected – internet activism has forged a powerful new solidarity. </p>
+        <p>Take the case of Liz, a 16-year-old Kenyan girl with learning difficulties who was left physically disabled and incontinent after being gang-raped and dumped in a pit latrine. </p>
+        <p>When Kenyan women’s rights groups heard that the perpetrators’ punishment was to cut the lawn of the local police station they started a protest petition on campaign site Avaaz. It went on to collect 1.6 million signatures. Kenya’s public prosecutor has since upgraded the charges and a new trial was due to start in June. </p>
+        <p>Other nascent campaigns are getting a taste of victory – such as the successful battle to force Facebook to remove misogynistic images and comment. Tactics and tools are quickly taken up and shared. Each win builds confidence and is a step towards bigger changes.</p>
+        <blockquote class="section--all section--box">
+            <h3 class="heading--all heading--box_title">I DON’T DESERVE TO BE RAPED</h3>
+            <figure>
+                <img class="embedded-media__image" src="http://dev.newint.org/sites/default/files/features/2014/07/07/nana-queiroz320.jpg" />
+                <figcaption class="embedded-media__caption">'I don't deserve to be raped'</figcaption>
+            </figure>
+            <p>A 28-year-old Brazilian journalist, Nana Queiroz, struck a blow against victim-blaming last March when she posted a photo of herself topless with the words ‘Eu Não Mereço Ser Estuprada’ (‘I don’t deserve to be raped’) written across her body [immortalized on this issue’s <a href="http://newint.org/issues/2014/06/27/474-01-cover.jpg">front cover</a>]. </p>
+            <p>It was her outraged response to a survey that claimed 65 per cent of Brazilians thought that a provocatively dressed woman deserved to be raped. The research institute later revised its figures down to 26 per cent – still a quarter of the population. </p>
+            <p>The post went viral, with thousands of women and men uploading their own pictures. Consequently, Queiroz met with President Dilma Rousseff and is helping to draft a document to outline how to educate schoolchildren in gender issues.
+            </p>
+        </blockquote>
+        <h3 class="heading--all heading--cross_head">Reasonable and revolutionary</h3>
+        <p>It feels as if feminism has a more populist bent today. It’s alright to be feminist and like Beyoncé. Men are increasingly encouraged to join the struggle for gender equity. There are pushes for more women on corporate boards or to run for high office.</p>
+        <p>‘It’s not what we in second-wave feminism thought we would work on,’ chuckles Joni Seager, ‘but I think it’s complementary in a “small steps” kind of way. It opens up the old debate: do we want to be the Barbarians at the gate or the people in the boardroom? I say both.’</p>
+        <p>Malala Yousafzai warned her peers, the Tower Hamlet girls, that both the ‘developing’ and what she described as the ‘modern world’ discriminated against women. ‘In India and Pakistan, people say it openly, but here [in Britain] it’s kept hidden. Now we need to highlight it. </p>
+        <p>‘Women need equality in practical life – real life.’</p>
+        <p>If we want the transformative, far-reaching changes imagined by Malala, it is the strong feminist movements that hold the key to change. </p>
+        <p>These organizations are more effective at combating violence than either political parties or wealth, according to a 40-year study conducted in 70 countries.9 Feminist groups are operating at the coalface of patriarchy in its most brutal manifestations, and should be the target of funds and support.</p>
+        <p>The foundations of feminism are strong. In Brazil (see above), feminist NGOs are monitoring the implementation of domestic violence legislation; while one young woman’s anti rape-culture stance – featured on the front of this issue – goes viral. The latest groundswell of anger brings new approaches, which can tap into the older wisdom, and has the chance to effect real cultural and political change.</p>
+        <p>These women will take us to the next stage on the journey: to a world that values women; where girls love the bodies they are born with, where rape is treated as if it mattered, and care is shared and valued. </p>
+        <ol class="section--all section--footnotes"><li class="item--all item--foot_ref">Huffington Post <a href="http://www.huffingtonpost.com/2012/08/24/maternal-mortality-rate-infographic_n_1827427.html">Maternal mortality infographic</a>.</li>
+            <li class="item--all item--foot_ref"><a href="http://www.sociology.ox.ac.uk/materials/papers/2010-03.pdf">'Why women are still left doing most of the housework'</a>, May 2011, Oxford University press release. </li>
+            <li class="item--all item--foot_ref"><a href="http://plancanada.ca/page.aspx?pid=4318">‘An early start for gender equality’</a>, Plan Canada, October 2011. </li>
+            <li class="item--all item--foot_ref">Natasha Walter, Living Dolls – the Return of Sexism, Virago, 2010.</li>
+            <li class="item--all item--foot_ref"><a href="http://sheu.org.uk/content/page/young-people-2013">Young People into 2013</a>, The Schools Health Education Unit. </li>
+            <li class="item--all item--foot_ref">Anne Becker, <a href="http://bjp.rcpsych.org/content/180/6/509.full">‘Eating behaviours and attitudes following prolonged exposure to television among ethnic Fijian adolescent girls’</a>, The British Journal of Psychiatry (2002). </li>
+            <li class="item--all item--foot_ref">Philip Cohen, <a href="http://www.theatlantic.com/sexes/archive/2013/08/the-banal-insidious-sexism-of-smurfette/278511">‘The Banal, Insidious Sexism of Smurfette’</a>, The Atlantic, August 2013. </li>
+            <li class="item--all item--foot_ref"><a href="http://www.bbc.co.uk/news/world-asia-india-24012424">‘Viewpoints: has the Delhi rape case changed India?’</a>, BBC News, September 2013. </li>
+            <li class="item--all item--foot_ref"><a href="http://journals.cambridge.org/action/displayAbstract?fromPage=online&amp;aid=8675829&amp;fileId=S0003055412000226">‘The civic origins of progressive policy change: combating violence against women in a global perspective</a>, 1975-2005’, American Political Science Review, (Issue, Volume 106), August 2012. </li>
+        </ol>
+
+        <div class="field field-name-post-date field-type-ds field-label-inline clearfix field-wrapper"><div  class="field-label">Published on:&nbsp;</div>2 July, 2014</div>
+        <div class="field field-name-field-themes field-type-taxonomy-term-reference field-label-inline clearfix field-wrapper">
+            <h2 class="field-label">Themes: </h2>
+            <ul class="links inline">
+                <li class="taxonomy-term-reference-0" class="field-item even"><a href="/themes/society/feminism" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Feminism</a></li>
+                <li class="taxonomy-term-reference-1" class="field-item even odd"><a href="/themes/society/women" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Women</a></li>
+                <li class="taxonomy-term-reference-2" class="field-item even odd even"><a href="/themes/society" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Society</a></li>
+            </ul>
+        </div>
+        <div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix field-wrapper">
+            <h2 class="field-label">Tags: </h2>
+            <ul class="links inline">
+                <li class="taxonomy-term-reference-0" class="field-item even"><a href="/tag/feminism" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">feminism</a></li>
+                <li class="taxonomy-term-reference-1" class="field-item even odd"><a href="/tag/rape-culture" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">rape culture</a></li>
+                <li class="taxonomy-term-reference-2" class="field-item even odd even"><a href="/tag/violence" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">violence</a></li>
+                <li class="taxonomy-term-reference-3" class="field-item even odd even odd"><a href="/tag/womens-rights" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">women&#039;s rights</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <!--/.main region -->
+
+
+    <aside role="complementary" class="large-3 sidebar-second columns sidebar">
+        <section class="block block-views block-views-blog-block-1 block-even clearfix">
+            <h2 class="block-title">Recent blogposts</h2>
+            <ul>
+                <li>
+                    <span class="field-content"><a href="/blog/majority/2015/01/20/kenya-rail-slums">Kenyan railroad to sweep aside slums</a></span> 
+                    <span class="field-content">Tuesday, January 20, 2015 - 09:37</span>
+                </li>
+                <li>
+                    <span class="field-content"><a href="/blog/books/2015/01/19/the-suffragettes">The Suffragettes, 1903-1918</a></span>
+                    <span class="field-content">Monday, January 19, 2015 - 10:24</span>
+                </li>
+                <li>
+                    <span class="field-content"><a href="/blog/2015/01/19/repsol-peru">Oil giant takes aim at indigenous groups in Peru</a></span>
+                    <span class="field-content">Monday, January 19, 2015 - 10:01</span>
+                </li>
+            </ul>
+            <div class="more-link">
+                <a href="/blog">More &gt;  </a>
+            </div>
+        </section>
+    </aside>
+</div>
+<div class="push"></div>
+</main>
+<script>
+window.addEventListener('WebComponentsReady', function(e) {
+        addHTML('.header', document.querySelector('main') );     
+        addHTML('.footer', document.querySelector('main'), "after" );
+        });
+</script>
+</body>
+</html>
