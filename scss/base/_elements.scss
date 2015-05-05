@@ -25,10 +25,14 @@ a {
 }
 
 h2 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // overflow: hidden;
     font-size: em($h2_size);
+}
+
+h1 {
+    font-size: em($h1_size);
 }
 
 p {
@@ -38,9 +42,9 @@ p {
 
 blockquote {
     font-style: italic;
-    border-left: 7px solid #ccc;
+    border-left: 7px solid $prime_color;
     padding-left: 1em;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
     p {
         font-size: em(20);
         color: #666;

@@ -6,8 +6,11 @@
 
 $ex-small: em(480);
 $small: em(625);
-$tablet: em(740);
-$desktop: em(980);
+$small-medium: em(700);
+$medium: em(740);
+$medium-large: em(860);
+$large: em(980);
+$ex-large: em(1250);
 
 
 //// Element sizes ////
@@ -19,7 +22,8 @@ $p_size: 18;
 $p_line-height: 1.5;
 $h3_size: 20;
 $h2_size: 22;
-$h1_size: 24;
+$h1_size: 26;
+$footnote_size: 15;
 
 
 //// Size & Position ////
@@ -35,3 +39,9 @@ $main_text-color: #333;
 $base_text-color: #333;
 
 
+
+/**
+ * Include switches
+ */
+
+$use_breadcrumbs: true;

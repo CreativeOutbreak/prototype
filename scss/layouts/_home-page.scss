@@ -221,7 +221,7 @@
     }
 }
 
-@include media($tablet) {
+@include media($medium) {
     .feature-box {
         #featured {
             @include justify-content(center);
@@ -263,7 +263,7 @@
     }
 }
 
-@include media($desktop) {
+@include media($large) {
     .feature-box {
         #featured {
             min-width: 75%;

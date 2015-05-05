@@ -8,6 +8,7 @@
 
 // Base elements
 @import "base/elements";
+@import "base/classes";
 @import "base/article";
 
 // Page layouts
@@ -16,3 +17,4 @@
 // Components
 @import "components/header";
 @import "components/footer";
+@import "components/breadcrumbs";

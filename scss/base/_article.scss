@@ -4,24 +4,47 @@
 }
 
 .main {
-    &.columns {
-        @include span-columns(8);
+    padding: 0 2em;
+
+    @include media($medium-large) {
+        &.columns {
+            @include span-columns(8);
+        }
     }
 
+
+    @include media($ex-large) {
+        padding: 0;
+    }
 }
 
 .sidebar-second {
 
-    &.columns {
-        @include span-columns(4);
+    @include media($medium-large) {
+        &.columns {
+            @include span-columns(4);
+        }
     }
 
+}
+
+.magazine {
+    font-style: italic;
+    color: #ccc;
+}
+
+.intro {
+    font-style: italic;
+    color: #555;
+    padding: 1em;
 }
 
 .splash-image {
     text-align: center;
     img {
         margin: auto;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+        border: 2px solid #fff;
     }
 }
 
@@ -53,9 +76,16 @@
 }
 
 .quote--quote {
-
+    float: left;
+    width: 50%;
+    margin: 1em 1.5em 1em -1em;
 }
 
 .section--footnotes {
-    margin-left: 1em;
+    padding: 2em;
+    font-size: em($footnote_size);
+    li {
+        padding: 0.25em 0;
+    }
+
 }
