@@ -48,6 +48,18 @@
     }
 }
 
+.entry-details {
+    font-style: italic;
+    color: #999;
+    text-align: center;
+    .pubdate {
+        
+        &:before {
+            content: " · ";
+        }
+    }
+
+}
 .section--box {
     padding: 1em;
     background-color: #eee;

@@ -38,8 +38,18 @@ h1 {
 p {
     font-size: em($p_size);
     line-height: 1.5;
+    font-family: georgia,"times new roman",times,serif;
 }
 
+sup, sub {
+    font-size: 0.8em;
+}
+sup {
+    vertical-align: super;
+}
+sub {
+    vertical-align: sub;
+}
 blockquote {
     font-style: italic;
     border-left: 7px solid $prime_color;

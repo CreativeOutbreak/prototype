@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -375,6 +376,19 @@ h1 {
 p {
   font-size: 1.125em;
   line-height: 1.5;
+  font-family: georgia,"times new roman",times,serif;
+}
+
+sup, sub {
+  font-size: 0.8em;
+}
+
+sup {
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
 }
 
 blockquote {
@@ -477,6 +491,15 @@ main {
   margin: auto;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
   border: 2px solid #fff;
+}
+
+.entry-details {
+  font-style: italic;
+  color: #999;
+  text-align: center;
+}
+.entry-details .pubdate:before {
+  content: " · ";
 }
 
 .section--box {
@@ -953,9 +976,11 @@ main {
 .header {
   width: 100%;
 }
-.header .logo-block {
-  width: 100%;
-  height: 110px;
+@media screen and (min-width: 46.25em) {
+  .header .logo-block {
+    width: 100%;
+    height: 110px;
+  }
 }
 .header .menu-bar {
   width: 100%;
