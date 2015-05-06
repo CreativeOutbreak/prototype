@@ -1,10 +1,17 @@
 
+main {
+    padding-top: 1em;
+}
+
 .row {
     @include row();
 }
 
 .main {
-    padding: 0 2em;
+    padding: 0 1em;
+    @include media($small-medium) {
+        padding: 0 2em;
+    }
 
     @include media($medium-large) {
         &.columns {
@@ -36,15 +43,24 @@
 .intro {
     font-style: italic;
     color: #555;
-    padding: 1em;
+    padding: 0.5em 0 0 0;
+    @include media($small) {
+        padding: 1em;
+    }
 }
 
 .splash-image {
     text-align: center;
+    margin: 0 -1em;
+    @include media($small) {
+        margin: 0;
+    }
     img {
         margin: auto;
-        box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
-        border: 2px solid #fff;
+        @include media($small) {
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+            border: 2px solid #fff;
+        }
     }
 }
 
@@ -63,7 +79,7 @@
 .section--box {
     padding: 1em;
     background-color: #eee;
-    margin: 0.5em 0;
+    margin: 0.5em -0.5em;
 
     img, figure {
         float: left;
@@ -88,9 +104,16 @@
 }
 
 .quote--quote {
-    float: left;
-    width: 50%;
-    margin: 1em 1.5em 1em -1em;
+    margin: 1em -0.5em;
+    
+    @include media($small-medium) {
+        float: left;
+        width: 50%;
+        margin: 1em 1.5em 1em -1em;
+    }
+    p {
+        font-size: em(20);
+    }
 }
 
 .section--footnotes {
