@@ -1,0 +1,45 @@
+.article_list {
+    $border-radius: 3px;
+    $bg-color: nth($color_palett-a, 3); 
+    $action-color: nth($color_palett-a, 2); 
+    margin: 0.5em auto;
+    max-width: em(468);
+    background-color: nth($color_palett-a, 6); 
+    h2 {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-color: $bg-color;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1em;
+        border-top-right-radius: $border-radius;
+        border-top-left-radius: $border-radius;
+    }
+
+    ul {
+        padding: 1em;
+
+        li {
+            padding: 0.25em 0;
+
+            a {
+                line-height: 1.5;
+            }
+
+            time {
+                display: block;
+                color: nth($grey_palett-a, 3);
+                font-style: italic;
+            }
+        }
+    }
+
+    .more-link {
+        padding: 0 1em 1em;
+        text-align: right;
+
+        a {
+            @include button(flat, $action-color);
+        }
+    }
+}

@@ -39,7 +39,7 @@ function addHTML(class_name, element, _ba) {
     }
 }
 </script>
-<script src="js/picturefill.js" async></script>
+<script src="js/picturefill.js"></script>
 </head>
 <body> 
 <main>
@@ -206,25 +206,71 @@ function addHTML(class_name, element, _ba) {
                 <button type="submit">Sign-up</button>
             </form>
         </section>
-        <section class="block block-views block-views-blog-block-1 block-even clearfix">
-            <h2 class="block-title">Recent blogposts</h2>
+        <section class="article_list article_list--recent_blogs">
+            <h2 class="block-title">Recent blog posts</h2>
             <ul>
                 <li>
                 <span class="field-content"><a href="/blog/majority/2015/01/20/kenya-rail-slums">Kenyan railroad to sweep aside slums</a></span> 
-                <span class="field-content">Tuesday, January 20, 2015 - 09:37</span>
+                <time class="pubdate" datetine="2014-07-02T09:00:00+01:00">Tuesday, January 20, 2015 - 09:37</time>
                 </li>
                 <li>
                 <span class="field-content"><a href="/blog/books/2015/01/19/the-suffragettes">The Suffragettes, 1903-1918</a></span>
-                <span class="field-content">Monday, January 19, 2015 - 10:24</span>
+                <time class="pubdate" datetine="2014-07-02T09:00:00+01:00">Monday, January 19, 2015 - 10:24</time>
                 </li>
                 <li>
                 <span class="field-content"><a href="/blog/2015/01/19/repsol-peru">Oil giant takes aim at indigenous groups in Peru</a></span>
-                <span class="field-content">Monday, January 19, 2015 - 10:01</span>
+                <time class="pubdate" datetine="2014-07-02T09:00:00+01:00">Monday, January 19, 2015 - 10:01</time>
                 </li>
             </ul>
             <div class="more-link">
-                <a href="/blog">More &gt;  </a>
+                <a href="/blog">More</a>
             </div>
+        </section>
+        <section class="advert_block advert_block--first">
+            <!-- this will probably be done with Doubleclick, so this is just template data -->
+            <a href="#first_advert" target="blank">
+                <picture>
+                    <source srcset="http://placehold.it/300x250&text=First+Advert+300x250" media="(min-width: 860px)">
+                    <img srcset="http://placehold.it/468x60&text=First+Advert+468x60" alt="First Advert" />
+                </picture>
+            </a>
+        </section>
+        <section class="article_list article_list--from_magazine">
+            <h2 class="block-title">Feminism magazine articles</h2>
+            <ul>
+                <li>
+                <span class="field-content"><a href="http://newint.org/features/2014/07/01/facts-for-feminists-infographic/">Facts for feminists</a></span> 
+                <time class="pubdate" datetine="2014-07-02T09:00:00+01:00">Monday, July 2, 2014 - 10:37</time>
+                </li>
+                <li>
+                <span class="field-content"><a href="http://newint.org/features/2014/07/01/female-genital-mutilation/">Mitts off my muff</a></span> 
+                <time class="pubdate" datetine="2014-07-03T09:00:00+01:00">Tuesday, July 3, 2014 - 07:33</time>
+                </li>
+                <li>
+                <span class="field-content"><a href="http://newint.org/features/2014/07/01/feminism-women-edge-of-time/">Women on the edge of time</a></span> 
+                <time class="pubdate" datetine="2014-07-04T09:00:00+01:00">Wednesday, July 4, 2014 - 12:47</time>
+                </li>
+                <li>
+                <span class="field-content"><a href="http://newint.org/features/2014/07/01/haiti-fighting-for-change/">Why are Haitians still eating mud cakes?</a></span> 
+                <time class="pubdate" datetine="2014-07-05T09:00:00+01:00">Thursday, July 5, 2014 - 15:26</time>
+                </li>
+                <li>
+                <span class="field-content"><a href="http://newint.org/sections/argument/2014/07/01/can-plastic-surgery-be-liberating/">Can plastic surgery be liberating?</a></span> 
+                <time class="pubdate" datetine="2014-07-06T09:00:00+01:00">Friday, July 6, 2014 - 16:53</time>
+                </li>
+            </ul>
+            <div class="more-link">
+                <a href="/blog">More</a>
+            </div>
+        </section>
+        <section class="advert_block advert_block--second">
+            <!-- this will probably be done with Doubleclick, so this is just template data -->
+            <a href="#first_advert" target="blank">
+                <picture>
+                    <source srcset="http://placehold.it/300x250&text=Second+Advert+300x250" media="(min-width: 860px)">
+                    <img srcset="http://placehold.it/468x60&text=Second+Advert+468x60" alt="Second Advert" />
+                </picture>
+            </a>
         </section>
     </aside>
 </div>

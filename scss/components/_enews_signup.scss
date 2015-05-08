@@ -1,0 +1,63 @@
+.enews {
+    
+    margin: 1em auto;
+    max-width: em(468);
+    
+    h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-style: italic;
+        border-bottom: 2px solid #eee;
+        color: nth($grey-palett-a, 2);
+        margin-bottom: 0.5em;
+        padding-bottom: 0.25em;
+        text-align: center;
+    }
+
+
+    form.enews_form {  
+        ///////////////////////////////////////////////////////////////////////////////////
+        $base-border-color: gainsboro !default;
+        $base-border-radius: 3px !default;
+        $base-line-height: 1.5em !default;
+        $action-color: nth($color_palett-a, 2) !default;
+        $dark-gray: #333 !default;
+        //////////////////////////////////////////////////////////////////////////////////
+        $base-spacing: 1em;
+
+        $search-bar-border-color: $base-border-color;
+        $search-bar-border: 1px solid $search-bar-border-color;
+        $search-bar-background: lighten($search-bar-border-color, 10%);
+
+        position: relative;
+
+        input[type=email] {
+            @include appearance(none);
+            @include box-sizing(border-box);
+            @include transition(border-color);
+            background-color: white;
+            border-radius: $base-border-radius;
+            border-radius: $base-border-radius;
+            border: 1px solid $base-border-color;
+            display: block;
+            font-size: 1em;
+            font-style: italic;
+            margin: 0;
+            padding: ($base-spacing / 3) ($base-spacing / 3);
+            position: relative;
+            width: 100%;
+        }
+
+        button[type=submit] {
+            @include button(flat, $action-color);
+            @include position(absolute, 0em 0em 0em null);
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            outline: none;
+            padding: 5px 10px;
+
+        }
+    }
+
+}

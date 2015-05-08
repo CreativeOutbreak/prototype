@@ -37,7 +37,7 @@ main {
 
 .magazine {
     font-style: italic;
-    color: #ccc;
+    color: nth($grey_palett-a, 5); // #ccc;
 }
 
 .intro {
@@ -78,7 +78,7 @@ main {
 }
 .section--box {
     padding: 1em;
-    background-color: #eee;
+    background-color: nth($grey_palett-a, 6); // #eee;
     margin: 0.5em -0.5em;
 
     img, figure {
@@ -109,7 +109,7 @@ main {
     @include media($small-medium) {
         float: left;
         width: 50%;
-        margin: 1em 1.5em 1em -1em;
+        margin: 1em 1.5em 1em -0.5em;
     }
     p {
         font-size: em(20);
